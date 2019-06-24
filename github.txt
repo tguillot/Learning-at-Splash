@@ -1,5 +1,6 @@
 pwd
 mkdir 
+mkdir -p folder/folerr/folderrr
 cd foldername/ #enter folder
 Ls  #list
 
@@ -19,13 +20,15 @@ echo "Test Git Quick Start demo" >> document.txt
 cat document.txt
 git status
 git add document.txt #creates document and doesn’t change git history in any way (with a . All the documents)
+git add . #recursive adding, so things in the directory
 git commit -m "Adding document text file" #makes it commit with message
-Git commit #without any more commands its opens default message 
+git commit #without any more commands its opens default message 
 git push origin master  #upload to GitHub
 
 
 Ls -al #show all files and folders (-al in listing format)
 Cd .. #go back a directory
+cd ../.. #go back as many directories as ../
 
 mate document.txt #opens app to edit text
 
@@ -38,3 +41,4 @@ git push -u origin master #push the commit to the github
 
 git commit -am (for tracked file)
 git ls-files #know which tracked files
+
