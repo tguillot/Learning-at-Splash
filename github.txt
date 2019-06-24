@@ -3,14 +3,16 @@ mkdir
 cd foldername/ #enter folder
 Ls  #list
 
+clear #clear screen
 
 git version
 git config --global user.name “Tania Guillot"
 git config --global user.email “tguillot2000@gmail.com”
 git config --global --list
 
-
- mate .tm_properties #from users modify the properties of text mate
+mate ~/.gitconfig  #modify from the text mate
+mate .tm_properties #from users modify the properties of text mate
+mate document.txt #modify the document locally
 
 git clone github-https-url  #paste in your GitHub HTTPS clone URL ls
 echo "Test Git Quick Start demo" >> document.txt
@@ -28,3 +30,11 @@ Cd .. #go back a directory
 mate document.txt #opens app to edit text
 
 Rm -rf foldername/ #deletes folder
+
+Git pull origin master #updates local remote repository
+
+git remote add origin https:// #from local computer chose repository
+git push -u origin master #push the commit to the github
+
+git commit -am (for tracked file)
+git ls-files #know which tracked files
