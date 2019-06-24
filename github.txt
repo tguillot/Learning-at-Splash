@@ -1,0 +1,30 @@
+pwd
+mkdir 
+cd foldername/ #enter folder
+Ls  #list
+
+
+git version
+git config --global user.name “Tania Guillot"
+git config --global user.email “tguillot2000@gmail.com”
+git config --global --list
+
+
+ mate .tm_properties #from users modify the properties of text mate
+
+git clone github-https-url  #paste in your GitHub HTTPS clone URL ls
+echo "Test Git Quick Start demo" >> document.txt
+cat document.txt
+git status
+git add document.txt #creates document and doesn’t change git history in any way (with a . All the documents)
+git commit -m "Adding document text file" #makes it commit with message
+Git commit #without any more commands its opens default message 
+git push origin master  #upload to GitHub
+
+
+Ls -al #show all files and folders (-al in listing format)
+Cd .. #go back a directory
+
+mate document.txt #opens app to edit text
+
+Rm -rf foldername/ #deletes folder
