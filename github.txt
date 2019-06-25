@@ -86,3 +86,5 @@ git branch -d branch_name #delete branch
 git diff master branch_name #shows differences
 git merge branche_name #merge branch to master
 git merge branch_name --no-ff #no fast forward
+
+server edit
