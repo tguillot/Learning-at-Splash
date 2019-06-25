@@ -34,7 +34,7 @@ mate document.txt #opens app to edit text
 
 Rm -rf foldername/ #deletes folder
 
-Git pull origin master #updates local remote repository
+git pull origin master #updates local remote repository
 
 git remote add origin https:// #from local computer chose repository
 git push -u origin master #push the commit to the github
@@ -48,7 +48,7 @@ git checkout --github.txt #resets back to unchanged file
 
 git mv oldname.txt newname.tx #change name of file in directory
 (if done without git, the rename is considered like a deleted and added document)
-git add -A #update moved deleted files, and recursive too
+git add -A #update moved deleted files, and recursive too (-am makes message too)
 #do undo renmanes use mv, not reset head
 git mv filename.txt folder/
 
@@ -72,5 +72,6 @@ git log --follow -- filename.txt #can see renames
 git show id_of_a_commit #shows that commit
 
 git config --global alias.name_of_command "command without the git part" #created alias git
-
 .gitignore #make file that ignores covument (list names, *extensions)
+
+cp file_name.txt newfile_name.txt #copy file and rename
