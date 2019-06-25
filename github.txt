@@ -42,3 +42,6 @@ git push -u origin master #push the commit to the github
 git commit -am (for tracked file)
 git ls-files #know which tracked files
 
+code . #open visual studio 
+git reset HEAD document.txt #resets the add command to working directory
+git checkout --github.txt #resets back to unchanged file
