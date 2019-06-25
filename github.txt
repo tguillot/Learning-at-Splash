@@ -87,11 +87,8 @@ git diff master branch_name #shows differences
 git merge branche_name #merge branch to master
 git merge branch_name --no-ff #no fast forward
 
-<<<<<<< HEAD
-server edit
-=======
 git rebase master #rewinds branch
 git rebase --abort #abort the rebase
 
-small edit
->>>>>>> local commit
+git fetch origin master #not destructive way of updating
+git pull --rebase origin master #causes rebase instead of normal merge
