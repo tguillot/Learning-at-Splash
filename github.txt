@@ -70,3 +70,7 @@ git log --since="3 days ago"
 git log -- filename.txt #history of specific file
 git log --follow -- filename.txt #can see renames
 git show id_of_a_commit #shows that commit
+
+git config --global alias.name_of_command "command without the git part" #created alias git
+
+.gitignore #make file that ignores covument (list names, *extensions)
