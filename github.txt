@@ -53,3 +53,10 @@ git add -A #update moved deleted files, and recursive too
 git mv filename.txt folder/
 
 git add renamed_or_moved_file.txt #when doing so manually from finder
+
+rm filename.txt #untracked files
+git rm filename.txt #tracked files
+
+rm delete_file.txt
+git reset HEAD deleted_file.txt #undo delete_file, doesnt restore
+git checkout -- deleted_file.txt #recovers file
