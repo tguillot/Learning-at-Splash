@@ -75,3 +75,9 @@ git config --global alias.name_of_command "command without the git part" #create
 .gitignore #make file that ignores covument (list names, *extensions)
 
 cp file_name.txt newfile_name.txt #copy file and rename
+
+git branch -a #list current branches
+git branch branch_name #make new branch
+git checkout branch_name #be at new breanch
+git branch -m branch_name new_branch_name #change the name of the branch name
+git branch -d branch_name #delete branch
