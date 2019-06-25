@@ -97,3 +97,10 @@ git stash #saves temporary changes and does a save by default
 git stash apply #apllies the temporary save
 git stash list #wip work in progress
 git stash drop #will drop the last stash made
+git stash -u #includes untracked files not excluded by the gitignore
+git stash pop #combines apply and drop
+git stash save "message" #saves with a message
+git stash show stash@{1} #stash with index you want to look at (example: 1)
+git stash apply stash@{1} #applies specific stash
+git stash drop stash@{1} #drops specific stash
+git stash clear #empty list of stashes
