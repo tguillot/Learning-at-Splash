@@ -95,3 +95,5 @@ git pull --rebase origin master #causes rebase instead of normal merge
 
 git stash #saves temporary changes and does a save by default
 git stash apply #apllies the temporary save
+git stash list #wip work in progress
+git stash drop #will drop the last stash made
