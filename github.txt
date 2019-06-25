@@ -60,3 +60,13 @@ git rm filename.txt #tracked files
 rm delete_file.txt
 git reset HEAD deleted_file.txt #undo delete_file, doesnt restore
 git checkout -- deleted_file.txt #recovers file
+
+git help command #gives help for that command
+git log #commits and changes in reverse order (q to quit)
+git log --abbrev-commit #shortens id 
+git log --oneline --graph --decorate one line, branching, graph, and labels
+git log commit_id...comid_id_" #shows range
+git log --since="3 days ago"
+git log -- filename.txt #history of specific file
+git log --follow -- filename.txt #can see renames
+git show id_of_a_commit #shows that commit
