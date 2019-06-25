@@ -92,3 +92,5 @@ git rebase --abort #abort the rebase
 
 git fetch origin master #not destructive way of updating
 git pull --rebase origin master #causes rebase instead of normal merge
+
+git stash #saves temporary changes and does a save by default
