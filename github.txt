@@ -45,3 +45,11 @@ git ls-files #know which tracked files
 code . #open visual studio 
 git reset HEAD document.txt #resets the add command to working directory
 git checkout --github.txt #resets back to unchanged file
+
+git mv oldname.txt newname.tx #change name of file in directory
+(if done without git, the rename is considered like a deleted and added document)
+git add -A #update moved deleted files, and recursive too
+#do undo renmanes use mv, not reset head
+git mv filename.txt folder/
+
+git add renamed_or_moved_file.txt #when doing so manually from finder
