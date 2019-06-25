@@ -78,7 +78,7 @@ cp file_name.txt newfile_name.txt #copy file and rename
 
 git branch #list branches
 git branch -a #list current branches and remote one
-git branch branch_name #make new branch
+git branch -b branch_name #make new branch
 git checkout branch_name #be at new breanch
 git branch -m branch_name new_branch_name #change the name of the branch name
 git branch -d branch_name #delete branch
@@ -87,4 +87,11 @@ git diff master branch_name #shows differences
 git merge branche_name #merge branch to master
 git merge branch_name --no-ff #no fast forward
 
+<<<<<<< HEAD
 server edit
+=======
+git rebase master #rewinds branch
+git rebase --abort #abort the rebase
+
+small edit
+>>>>>>> local commit
