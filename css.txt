@@ -14,28 +14,42 @@ External #by using an external CSS file
         <link rel="stylesheet" href="styles.css">
     </head>
 
-Css attributes:
-border:1px solid blue;
-padding: 30px;
-margin: 50px;
+Selectors:
+p {} #all paragraphs will be affected
+#id {} #affect one unique element
+.class {} #any class="class" element will be affected
+p.class {} #only p elements with that class will be affected
+h1,h1 {} #selectors can be grouped
 
-Id:
-<p id="p01">stuff</p>
-    #p01 {
-        color: blue;
-        }
-
-Class:
-<p class="error">error message</p>
-        p.error {
-    color: red;
-    }
+Comments:
+/* This is a single-line comment */
 
 Referencing:
 <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"> #full link
 <link rel="stylesheet" href="/html/styles.css"> #file in current website
 <link rel="stylesheet" href="styles.css"> #file in current page
 
-
-
-
+Atributes:
+Colors, 
+backgrounds (-color,-image,-repeat,-attachment,-position)
+borders (-style, -width, -color, -radius)
+margins (auto)
+padding (box property)
+height/width(max,min,boxmodel)
+box model (content, padding, border, margin)
+outline (-style, -color,-width,-offset)
+text (-color, align, -decoration, -transform,-indent, letter-spacing, -height, word-spacing,-shadow)
+font (-family,-style,-size, -variant, -weight)
+icons
+links (a:link, a:visited, a:hover, a:active) 
+list (list-style-type: circle, square, upper-roman, lower-roman, list-style-position:outisde, inside)
+tables (border, width, height, text-align, hover, zebra stripped, overflow-x:auto) (border, border-collapse, border-spacing, caption-side, empty-cells, table-layout)
+display (overide default, inline, block,none, visibility:hidden)
+position (static, relative, fixed, absolute, sticky) (bottom, clip, left, right, top, z-index)
+overflow (visible, hidden, scroll, auto, -x, -y)
+float (left, right, none inherit) (box.sizing)
+clear (none, left, right, both, inherit)
+combinators (descendant selector (space), child selector (>), adjacent sibling selector (+),general sibling selector (~))
+pseudo.class and pseudo-element
+forms
+counters
