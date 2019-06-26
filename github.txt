@@ -104,3 +104,4 @@ git stash show stash@{1} #stash with index you want to look at (example: 1)
 git stash apply stash@{1} #applies specific stash
 git stash drop stash@{1} #drops specific stash
 git stash clear #empty list of stashes
+git stash branch name_of_branch #saves stash in the branch, stash is applied and dropped
