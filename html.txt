@@ -1,0 +1,83 @@
+
+Basic structure:
+<!DOCTYPE html> #document type must appear once
+<html> #root element
+    <head> #meta information
+        <title>Page title</title>
+    </head>
+    <body>
+        <h1>This is a heading</h1>
+    </body>
+</html>
+
+
+
+General Attributes:
+<button>Click me</button> #button
+<ul> <li>thing1</li> <li>thing2</li> </ul> #bullet point list
+<ol> <li>thing1</li> <li>thing2</li> </ol> #numbered list
+<br> #line break
+<html lang="en-US"> #declares language
+<p title="hovering mouse">stuff</p> #displays text when hovering mouse over
+<hr> #horizontal line
+<pre>stuff stuff</pre> #defines text as preformated and doesn't change spacing
+
+Style:
+<b> #Bold text | <strong> #Important text
+<i> #Italic text | <em> #Emphasized text
+<mark> #Marked text like highlighter
+<small> #Small text
+<del> #Deleted text line crossed over
+<ins> #Inserted text line under
+<sub> #Subscript text
+<sup> #Superscript text
+<p style="property:value">stuff</p> #declares style
+    Properties: "font-size:300%", "color:red", "background-color:blue", 
+                "font-family:verdana", "text-align:center", "border:2px solid Orange"
+
+
+Quotations:
+<q>citation</q> #inserts quotations marks 
+<blockquote></blockquote> #big citation in with special indentation
+<abbr title="Hovering text">HT</abbr> #abreviates and display text when hovering
+<address>street</address> #italics address
+<cite>citation</cite> #displays citation in italics
+<bdo dir="rtl">text</bdo> #wirtes text in opposite direction
+
+Comments:
+<!-- comment -->
+
+Color notation: https://www.w3schools.com/html/html_colors.asp 
+rgb(#,#,#) 0-255
+rgba(#,#,#,opacity) #opcaity from 0-1
+#ff6347 #hex values
+hsl (#,%,%) #hue 0-360, saturation, lightness
+hsla (#,%,%,opacity)
+
+Links:
+<a href="link.com">click this</a> #html links
+<style> #"visited", "hover" and "active"  
+a:link {
+  color: green; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+</style>
+
+Target: #where to open the linked document
+<a href="link" target="_property">
+Properties: _blank (new window/tab), _self (same window), _parent (parent frame), _top (named frame)
+
+Bookmark:
+<h2 id="C4"> Chapter 4 </h2>
+<a href="#C4"> Jump to Chapter </a> #from same page
+<a href="html_demo.html#C4">Jump to Chapter 4</a> #from different page
+
+Images:
+<img src="picture.jpg" alt="link.com" width="104" height="142" float="right"> #pictures with properties and alternative text (if image cant be displayed)
+<style> img {width:100%} </style> #prevents images from changing size
+<map></map> #map images to click speficic areas to links
+<body style="background-image:url('clouds.jpg');"> </body> #background image
+<picture><source media="(min-width:650px) srcset=·imagelink><source 2></picture> #choses image that matches critiria
+
+Tables 

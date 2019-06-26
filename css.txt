@@ -1,0 +1,41 @@
+Cascading Style Sheets
+Inline # style attribute in HTML elements
+    <h1 style="color:blue;"> thing </h1>
+
+Internal #<style> element in the <head> section
+    <head>
+        <style>
+            h1   {color: blue;}
+        </style>
+    </head>
+
+External #by using an external CSS file
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+Css attributes:
+border:1px solid blue;
+padding: 30px;
+margin: 50px;
+
+Id:
+<p id="p01">stuff</p>
+    #p01 {
+        color: blue;
+        }
+
+Class:
+<p class="error">error message</p>
+        p.error {
+    color: red;
+    }
+
+Referencing:
+<link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"> #full link
+<link rel="stylesheet" href="/html/styles.css"> #file in current website
+<link rel="stylesheet" href="styles.css"> #file in current page
+
+
+
+
