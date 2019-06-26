@@ -11,11 +11,8 @@ Basic structure:
 </html>
 
 
-
 General Attributes:
 <button>Click me</button> #button
-<ul> <li>thing1</li> <li>thing2</li> </ul> #bullet point list
-<ol> <li>thing1</li> <li>thing2</li> </ol> #numbered list
 <br> #line break
 <html lang="en-US"> #declares language
 <p title="hovering mouse">stuff</p> #displays text when hovering mouse over
@@ -80,4 +77,51 @@ Images:
 <body style="background-image:url('clouds.jpg');"> </body> #background image
 <picture><source media="(min-width:650px) srcset=·imagelink><source 2></picture> #choses image that matches critiria
 
-Tables 
+Tables:
+<table> #defines table
+  <tr> #defines line
+  <th> #defines header </th> </tr> </table>
+border, collapsed border, padding, text-align, border-spacing #styling
+<th colspan="2"> #makes cell span more thatn one column, same with rowspan
+<caption> #adds caption
+
+List:
+<ul style="property"> <li>thing1</li> <li>thing2</li> </ul> #bullet point list
+properties: "list-style-type:disc", cricle, square, none
+<ol type="#"> <li>thing1</li> <li>thing2</li> </ol> #numbered list
+type: 1 numbers, A uppercase letters, a lowercase letters, I uppercase roman numbers, i lowercase roman
+<dl><dt>Coffee</dt><dd> Its a drink<dd> </dt> </dl> #list with tags and descriptions
+start="50" #start at certain numbered
+
+Block elements:
+<div></div> #takes up whole line
+<span></span> #takes minimum space possible
+
+Class: #can be used my many elements
+<style> .note {...} </style>
+<span class="note">...
+
+Id: #can only be used by one element
+<style> #idname {...} </style>
+<span id="idname">...
+
+Ifframe: #webpage within webpage
+
+Head: #metadata
+Tags: 
+<title>
+<style> (for style), 
+<meta> (character set, page description, keywords, author, viewpoint),
+<link> (reference external links), 
+<script> (javascrpit client side)
+<base> (base target)
+
+Layout: CSS float property, CSS flexbox, CSS framework, CSS grid
+
+Scaling:
+viewpoint #change view scale
+max-width:100% #will get smaller if needed but not bigger
+picture tag #make different image options
+font-size:10vw #view point width scaled
+
+Computer code elements:

@@ -1,0 +1,15 @@
+Dynamic and Interactive website!
+
+<script></script> #client side
+document.getElementById() #select html element and change value
+document.getElementById("demo").style.color = "red"; #change style
+document.getElementById("image").src = "picture.gif"; #change atributes
+
+<noscript></noscript> #if the browser doesn't support it
+
+Id:
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
