@@ -1,0 +1,45 @@
+<form> </form> #used to collect user inpit
+action="/action_page.php" #what link will open
+target=property #where th elink will open
+method="get"/"post" #http method
+autocomplete= on/off
+oninput="..."
+
+Input:
+<input> </input> 
+type="text", "radio" many choices, "sumbit" button #type of entering... https://www.w3schools.com/html/html_form_input_types.asp
+name="name_of_input" #must be there for data to be submitted
+#restrictions can be added (max, min, size...)
+<fieldset> </fieldset> #group related data
+<legend> title of data </legend>
+
+Input attributes:
+value #specifies value of input field
+readonly #cant be changed
+disabled 
+size #specifies size of characters
+maxlength
+pattern #specify fomrat for example postal code
+placeholder 
+required #makes it mandatory
+step #interval of incease
+
+<select name="cars" multiple size="3"> #dropdownlist
+  <option value="volvo" selected>Volvo</option> #option that can be selected
+  <option value="saab">Saab</option>
+</select>
+#selected used for default seelected one
+#multiple allows user to select many
+
+<textarea name="message" rows:"10" cols:"30" ></textarea>  #big input box
+<button type="button" onclick="show this">Click</button>
+<datalist> </datalist> #predfined data
+<output name="something"></output> #result fo calculation
+
+autocomplete #browser suggest what user has written before
+nonvalidate #when form is subitmed data should not be validated
+autofocus #input field gets focus
+
+formenctype #for post forms how to send data
+formmethod #for method froms how to send data
+formtarget target #to add different targets to forms
