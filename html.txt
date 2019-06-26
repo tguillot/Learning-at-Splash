@@ -140,3 +140,23 @@ Scheme: http, or https (secure)
 prefix: www
 domain: splashthat.com
 port: default 80
+
+
+Graphics:
+<canvas> #drawing canvas
+<svg> #scalable vector Graphics
+
+Media:
+<video> #defines video
+<audio> #deifnes audio
+<source> #Defines multiple media resources for media elements
+<track> #track in media players
+
+Plugins:
+<object> or <embed> #embedded object
+
+Api:
+-drag and drop
+-web storage
+-web workers (like timers)
+-sse #gets updates from a server
