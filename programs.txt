@@ -1,0 +1,2 @@
+xCode: integrated development environment (IDE) with softawre development tools.
+homebrew: software package management, makes installation easier
