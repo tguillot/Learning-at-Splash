@@ -1,2 +1,9 @@
 xCode: integrated development environment (IDE) with softawre development tools.
-homebrew: software package management, makes installation easier
+homebrew: software package management, makes installation easier (brew help) to get all tools
+NodeJS: runtime environemtn, converts javascript code into faster machine code
+yarn: front end dependency manager, for installed packages and downloads
+docker for mac: used to run splash locally, comunity edition app
+mysql: database management system, intead of docker --> not installed
+OhMyZsh: terminal improvement
+NVM. Node Version Management: switch and update node versions easily
+postman: easily test and create api endpoints, can do http request, convert code for different languages
