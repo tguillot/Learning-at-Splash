@@ -1,14 +1,17 @@
 SELECT - extracts data from a database #select * from **
 SELECT DISTINCT - only hsows different values
+SELECT TOP | or use LIMIT
+SELECT INTO #copies data from one table into new table
+INSERT INTO SELECT #copies data from one table and inserts it into another table.
+
 WHERE - adds condition #select * from ** where condition="*"
-AND | OR | NOT
-ORDER BY - order by ASC or DESC #select * from ** order by *** ASC
+LIKE #like patteren, starts with letter finishes with letter etc
+AND | OR (IN) | NOT
+BETWEEN
 
 UPDATE - updates data in a database #update * set ** = "***" where *=x
 DELETE - deletes data from a database
-
 INSERT INTO - inserts new data into a database #insert into * (*,*,*) values ("*","*","*")
-
 CREATE DATABASE - creates a new database
 ALTER DATABASE - modifies a database
 CREATE TABLE - creates a new table
@@ -16,3 +19,23 @@ ALTER TABLE - modifies a table
 DROP TABLE - deletes a table
 CREATE INDEX - creates an index (search key)
 DROP INDEX - deletes an index
+
+AS -make alias
+ORDER BY - order by ASC or DESC #select * from ** order by *** ASC
+JOIN #inner, outter left,right,full
+UNION #combines results
+GROUP BY
+*HAVING #instead of where for aggregate functions
+EXISTS #returns true if exists
+ANY | ALL #checks if any match or if all match
+
+CASE #if-then-else
+
+MIN () MAX() #returns max or min value
+COUNT() #number of rows that matches a specified criteria.
+AVG()  #average value of a numeric column.
+SUM() #total sum of a numeric column.
+
+IFNULL() | ISNULL() | COALESCE() | NVL() #allows to return something else if null
+
+--comments are made like this
