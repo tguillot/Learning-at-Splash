@@ -7,3 +7,9 @@ mysql: database management system, intead of docker --> not installed
 OhMyZsh: terminal improvement
 NVM. Node Version Management: switch and update node versions easily
 postman: easily test and create api endpoints, can do http request, convert code for different languages
+Gulp: command line task runner utilizing Node.js platform. It runs custom defined repetitious tasks and manages process automation.
+Web pack: command line tool to create bundles of assets (code and files), it doesn't run on the server or the browser. It takes all your javascript files and any other assets and transforms then into one huge file.
+
+
+Minify: removing unnecessary white-space and redundant like comments and semicolons. And it can be reversed back when needed.
+Uglifying: transforming the code into an "unreadable" form by changing variable names, function names... Once it is used there's no way to reverse it back.
