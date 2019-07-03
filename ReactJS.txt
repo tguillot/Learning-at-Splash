@@ -78,3 +78,13 @@ Conditional Rendering: if works
     false && expression = false
     So if the condition is true, the element right after && will appear in the output. If false it will skip it
 condition ? true : false.
+
+const doubled = numbers.map((number)=>number*2)
+assign keys: key={number.toString()} --> ususally use id item.id --> or use index (not so good)
+
+const content = posts.map((post) =>  #props.id works while props.key doesn't
+  <Post
+    key={post.id}
+    id={post.id}
+    title={post.title} />
+);
