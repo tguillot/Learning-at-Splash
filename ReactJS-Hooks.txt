@@ -1,17 +1,3 @@
-useContext
-useReducer
-
-Function vs Function variable
-const Example = (props) => {return <div />;}
-function Example(props) {return <div />;}
-
-Declaring a state in a function:
-function Example(props) {
-    const [count,setCount] = useState(0);
-    return <div />;
-    
-}
-
 useState
 -takes initial value as variable
 -returns current state and a function that updates it
@@ -26,3 +12,37 @@ if they need cleanup they return a function
 
 Skip effect if there hasn't been a change:
 useEffect(() => {document.title = `You clicked ${count} times`;}, [count]);
+
+*hooks can't be in loops, if can be inside the useEffect though
+custom hooks --> reuse stateful logic 
+
+useContext(MyContect) --> which is an object
+
+useReducer --> for complex state logic
+const [state, dispatch] = useReducer(reducer, initialArg, init);
+
+useCallback(fn, deps) is equivalent to useMemo(() => fn, deps).
+
+Function vs Function variable
+const Example = (props) => {return <div />;}
+function Example(props) {return <div />;}
+
+Declaring a state in a function:
+function Example(props) {
+    const [count,setCount] = useState(0);
+    return <div />;
+    
+}
+
+useMemo --> return memoized value
+const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
+
+useRef --> returns mutable ref object whose .current property is init to the passed argument initValie
+const refContainer = useRef(initialValue);
+
+useImperativeHandle --> customizes the intance value exposed to parent components when using ref
+useImperativeHandle(ref, createHandle, [deps])
+
+useLayoutEffect --> useEffect but fires synchronously after all DOM mutations
+
+useDebugValue(value) --> display a label for custom hooks
