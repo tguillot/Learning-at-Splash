@@ -34,7 +34,7 @@ function Example(props) {
     
 }
 
-useMemo --> return memoized value
+useMemo --> return memoized value meaning if inputs havent changed instead of recalculating it outputs the same value
 const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
 
 useRef --> returns mutable ref object whose .current property is init to the passed argument initValie
