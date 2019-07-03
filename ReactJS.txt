@@ -1,0 +1,49 @@
+DOM: Document Object Model
+JSX: java script extension for XML
+XML: describes data
+HTML: displays data
+
+JSX:
+const element = (<h1>Hello, {formatName(user)}!</h1>);
+
+Naming:
+class --> className
+
+User input is safe to embed
+
+React Elements: (React.ceateElement())
+const = (<h1 className="greeing"> Hello </h1>)
+const element = React.createElement("h1",{className:"greeting"},"Hello")
+
+Root DOM node: everything in the division <div id="root"></div>
+
+Render a React element into a root DOM node (ReactDOM.render(element,node)):
+const element = <h1>Hello, world</h1>;
+ReactDOM.render(element, document.getElementById('root'));
+
+React elements can't be changed, they can be updated by making new ones.
+Only the text node contents that change get updated by React
+*how should the UI look mentality > how to change it
+
+Components: (like function) accepts single props (inputs) return react elements
+Function components: literally javascript functions
+
+All React components must act like pure functions with respect to their props.
+
+Function to Class:
+1. class className extends React.Component
+2. add single empty method render()
+3. body of function into render() {here}
+4. replace pros with this.props in render body
+
+Adding state
+1. Replace this.props.date with this.state.date in the render()
+2. Add a class constructor that assigns the initial this.state
+    constructor(props) {
+        super(props);
+        this.state={---}
+    }
+3. ReactDOM.render(
+    <className />
+    document.getElementById('root')
+)
