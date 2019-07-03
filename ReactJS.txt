@@ -65,3 +65,9 @@ Pass down with props: <FormattedDate date={this.state.date} /> OR <h2>It is {thi
 function FormattedDate(props) {
   return <h2>hi {props.date.toLocaleTimeString()}.</h2>;
 }
+
+Handling Events:
+HTML VS REACT:
+onclick="activateLasers()" vs onClick={activateLasers}
+
+pasing argumnets to event handlers: <button onClick={this.deleteRow.bind(this, id)}>Delete Row</button>
