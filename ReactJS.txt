@@ -70,4 +70,11 @@ Handling Events:
 HTML VS REACT:
 onclick="activateLasers()" vs onClick={activateLasers}
 
-pasing argumnets to event handlers: <button onClick={this.deleteRow.bind(this, id)}>Delete Row</button>
+Passing arguments to event handlers: <button onClick={this.deleteRow.bind(this, id)}>Delete Row</button>
+
+Conditional Rendering: if works
+&&
+    true && expression = expression
+    false && expression = false
+    So if the condition is true, the element right after && will appear in the output. If false it will skip it
+condition ? true : false.
