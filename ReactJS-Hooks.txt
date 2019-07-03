@@ -1,0 +1,28 @@
+useContext
+useReducer
+
+Function vs Function variable
+const Example = (props) => {return <div />;}
+function Example(props) {return <div />;}
+
+Declaring a state in a function:
+function Example(props) {
+    const [count,setCount] = useState(0);
+    return <div />;
+    
+}
+
+useState
+-takes initial value as variable
+-returns current state and a function that updates it
+-can use count directly to read state
+-update state with onClick={() => setCount(count + 1)}
+
+useEffect
+
+Effect Hook: side effects from a function component (didMount,didUpdate,willUnmount)
+useEffect( () => { varaible_name="something ${varaible_changed}})
+if they need cleanup they return a function
+
+Skip effect if there hasn't been a change:
+useEffect(() => {document.title = `You clicked ${count} times`;}, [count]);
