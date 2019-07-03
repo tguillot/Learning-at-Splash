@@ -47,3 +47,21 @@ Adding state
     <className />
     document.getElementById('root')
 )
+
+LifeCycle Methods:
+Mounting: set up a timer whenever Clock is rendered for the first time
+    componentDidMount() {this.timerID = setInterval(() => this.tick(),1000}
+Unmounting: clear timer whenever DOM produced by Clock is removed
+    componentWillUnmount() {clearInterval(this.timerID);}
+this.setState() updates on component local state
+
+setState():
+    -do not modify directly this.state=---- NO only assign this.state in constructor
+    - modify with thi,setState ({yes})
+    - can update individual independent variables functionName().then (response => {this.setState({---})})
+
+State is only accessible to the one that ones it (not parent nor child) --> called local/encapsulated
+Pass down with props: <FormattedDate date={this.state.date} /> OR <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+function FormattedDate(props) {
+  return <h2>hi {props.date.toLocaleTimeString()}.</h2>;
+}
