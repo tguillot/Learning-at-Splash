@@ -24,3 +24,10 @@ const:
   block scoped
   ReferenceError when accessing a variable before it's declared
   can't be reassigned
+
+arrow function:
+parameters => expression
+
+function (parameters){
+  return expression;
+}
