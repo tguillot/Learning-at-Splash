@@ -18,12 +18,12 @@ mate document.txt #modify the document locally
 git clone github-https-url  #paste in your GitHub HTTPS clone URL ls
 echo "Test Git Quick Start demo" >> document.txt
 cat document.txt
-git status
-git add document.txt #creates document and doesn’t change git history in any way (with a . All the documents)
-git add . #recursive adding, so things in the directory
-git commit -m "Adding document text file" #makes it commit with message
+!git status
+!git add document.txt #creates document and doesn’t change git history in any way (with a . All the documents)
+!git add . #recursive adding, so things in the directory
+!git commit -m "Adding document text file" #makes it commit with message
 git commit #without any more commands its opens default message 
-git push origin master  #upload to GitHub
+!git push origin master(or name of branch)  #upload to GitHub
 
 
 Ls -al #show all files and folders (-al in listing format)
@@ -32,19 +32,17 @@ cd ../.. #go back as many directories as ../
 
 mate document.txt #opens app to edit text
 
-Rm -rf foldername/ #deletes folder
+!git pull origin master #updates local remote repository
 
-git pull origin master #updates local remote repository
+!git remote add origin https:// #from local computer chose repository
+!git push -u origin master #push the commit to the github
 
-git remote add origin https:// #from local computer chose repository
-git push -u origin master #push the commit to the github
-
-git commit -am (for tracked file)
+!git commit -am (for tracked file)
 git ls-files #know which tracked files
 
-code . #open visual studio 
+!!code . #open visual studio 
 git reset HEAD document.txt #resets the add command to working directory
-git checkout --github.txt #resets back to unchanged file
+!git checkout --github.txt #resets back to unchanged file
 
 git mv oldname.txt newname.tx #change name of file in directory
 (if done without git, the rename is considered like a deleted and added document)
@@ -62,7 +60,7 @@ git reset HEAD deleted_file.txt #undo delete_file, doesnt restore
 git checkout -- deleted_file.txt #recovers file
 
 git help command #gives help for that command
-git log #commits and changes in reverse order (q to quit)
+!git log #commits and changes in reverse order (q to quit)
 git log --abbrev-commit #shortens id 
 git log --oneline --graph --decorate one line, branching, graph, and labels
 git log commit_id...comid_id_" #shows range
@@ -76,32 +74,59 @@ git config --global alias.name_of_command "command without the git part" #create
 
 cp file_name.txt newfile_name.txt #copy file and rename
 
-git branch #list branches
-git branch -a #list current branches and remote one
+!git branch #list branches
+!git branch -a #list current branches and remote one
 git branch -b branch_name #make new branch
 git checkout branch_name #be at new breanch
 git branch -m branch_name new_branch_name #change the name of the branch name
 git branch -d branch_name #delete branch
 
+!git checkout -b branch_name #make new branch and be there
+
 git diff master branch_name #shows differences
 git merge branche_name #merge branch to master
 git merge branch_name --no-ff #no fast forward
 
-git rebase master #rewinds branch
-git rebase --abort #abort the rebase
+!git rebase master #rewinds branch
+!git rebase --abort #abort the rebase
+!git rebase --continue #when you get merge conflict, open them git add and then this command
 
-git fetch origin master #not destructive way of updating
+!git fetch origin master #not destructive way of updating
 git pull --rebase origin master #causes rebase instead of normal merge
 
-git stash #saves temporary changes and does a save by default
+!git stash #saves temporary changes and does a save by default
 git stash apply #apllies the temporary save
 git stash list #wip work in progress
 git stash drop #will drop the last stash made
 git stash -u #includes untracked files not excluded by the gitignore
-git stash pop #combines apply and drop
+!git stash pop #combines apply and drop
 git stash save "message" #saves with a message
 git stash show stash@{1} #stash with index you want to look at (example: 1)
 git stash apply stash@{1} #applies specific stash
 git stash drop stash@{1} #drops specific stash
 git stash clear #empty list of stashes
 git stash branch name_of_branch #saves stash in the branch, stash is applied and dropped
+
+---
+!git status
+!git add document.txt #creates document and doesn’t change git history in any way (with a . All the documents)
+!git add . #recursive adding, so things in the directory
+!git commit -m "Adding document text file" #makes it commit with message
+!git push origin master(or name of branch)  #upload to GitHub
+!git pull origin master #updates local remote repository
+!git remote add origin https:// #from local computer chose repository
+!git push -u origin master #push the commit to the github
+!git commit -am (for tracked file)
+!!code . #open visual studio 
+!git checkout --github.txt #resets back to unchanged file
+!git log #commits and changes in reverse order (q to quit)
+!git branch #list branches
+!git branch -a #list current branches and remote one
+!git checkout -b branch_name #make new branch and be there
+!git rebase master #rewinds branch
+!git rebase --abort #abort the rebase
+!git rebase --continue #when you get merge conflict, open them git add and then this command
+!git fetch origin master #not destructive way of updating
+!git stash #saves temporary changes and does a save by default
+!git stash pop #combines apply and drop
+
