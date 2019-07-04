@@ -1,0 +1,28 @@
+Redux: predictable state container for JavaScript apps.
+Dispatchers: classes that fire events
+
+  Actions are payloads of information that send data from your application to your store. They are the only source of information for the store
+    -Send them to store with: store.dispatch()
+    -objects: 
+        *must have type property that indicates type of action
+        *can have index
+
+Action creators are functions that crete actions 
+function addTodo (text) {
+    return {type:ADD_TODO,test}       -->   dispatch (addTodo(text))
+}
+
+Bound action creator that automatically dispatches
+const boundAddTodo = text => dispatch(addTodo(text))
+boundAddTodo(text)
+
+store.dispatch()
+bindActionCreators() #automatically bind many action creators to dispatch function
+
+Reducer: specify how the application's state changes in response to actions sent to the store
+(previousState, action) => newState
+*if state is undefined return initalState
+*create a copy with  Object.assign({}},---=---,---) (must have empyt object in first part)
+*switch (case,case,default) its important to have a default for unknown action
+
+combineReducers() #generate a function that calls your reducer with the states accoring to their keys
