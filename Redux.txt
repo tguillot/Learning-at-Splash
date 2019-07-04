@@ -26,3 +26,19 @@ Reducer: specify how the application's state changes in response to actions sent
 *switch (case,case,default) its important to have a default for unknown action
 
 combineReducers() #generate a function that calls your reducer with the states accoring to their keys
+
+Store:
+-Holds application state;
+-Allows access to state via getState();
+-Allows state to be updated via dispatch(action);
+-Registers listeners via subscribe(listener);
+-Handles unregistering of listeners via the function returned by subscribe(listener).
+createStore(reducer,window.optional-initalState)
+
+Data Life Cycle
+1. store.dispatch(action) #brief news
+2. store pass (current state, action) to reducer
+3. root reducer may combine the outputs of multiple reducers into a single state combineReducers().
+4. redux store asves the state tree returned by the root reducer
+5. store.subscribe(listener) will now be invoked, listeners might call store.generate()
+
