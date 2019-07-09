@@ -1,0 +1,40 @@
+<?php code ?>
+//comments 
+/* many lines comments */
+
+$variable = thing;
+
+echo $variable . "text"  #display on screen 
+print 
+
+
+global $variable #you can use a variable from outside the function inside 
+static $variable #function doesn't delete it when its done running
+
+Data Types:
+- String "hi"
+    -strlen() #count letters
+    -str_word_count() #counts words
+    -strrev() #reverse
+    -strpos() #find word
+    -str_replace("instead of this","put this", "sentence") #replaces
+- Integer 3
+- Float 1.5
+- Array array("this","that")
+- Object class Thing { function Thing () {$this->id=2}}
+    -access property of object $bob= new Thing(); echo $bob->id;
+- Null
+
+Constants
+- define(name, value, case-insensitive) #make constant (default case sensitivity is false)
+- automaticaly global
+
+Conditional Statements
+- if (condition) {code to be executed if condition is true;} #else and elseif
+- switch (n) {case label1: code; break; case label2: code; break; default: code;} #default is if not match is found
+
+Loops
+- while (condition is true) {code;} #while condition is true
+- do {code;} while (condiiton is true); #executes once then is a normal while
+- for #for amount of times
+- foreach #loops for each element

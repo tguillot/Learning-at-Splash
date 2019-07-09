@@ -42,3 +42,7 @@ Data Life Cycle
 4. redux store asves the state tree returned by the root reducer
 5. store.subscribe(listener) will now be invoked, listeners might call store.generate()
 
+
+Contianer components
+read data --> subscribe to redux
+change data --> dispatch actions
