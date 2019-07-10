@@ -36,5 +36,5 @@ Conditional Statements
 Loops
 - while (condition is true) {code;} #while condition is true
 - do {code;} while (condiiton is true); #executes once then is a normal while
-- for #for amount of times
-- foreach #loops for each element
+- for (init counter; condition counter; increment counter) {code;} #for amount of times
+- foreach ($array as $value) {code;} #loops for each element
